@@ -1,40 +1,29 @@
-<!doctype HTML>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    </head>
-   <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    
-    <!-- add this script in order to load a large set of 3D model extensions-->
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    
-    <body style='margin : 0px; overflow: hidden;'>
-        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-
-        <a-assets>
-            <a-asset-item id="animated-asset" src="./assets/lifted.gltf"></a-asset-item>
-        </a-assets>
-
-        <a-marker type='pattern' preset="custom" url="./assets/pattern-marker-lift.patt">
-               <a-entity
-                gltf-model="#animated-asset"
-                position="0 -1 0"
-                scale="6">
-            </a-entity>        
-        </a-marker>
-
-        <a-marker id="animated-marker" type='pattern' preset="custom" url="./assets/pattern-marker-lift.patt">
-            <a-entity
-                gltf-model="#animated-asset"
-                scale="2">
-            </a-entity>
-        </a-marker>
-
-        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-        <a-entity camera></a-entity>
-        </a-scene>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>pallet jack</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="lift.gltf" alt="a yellow pallet jack, rusting with peeling paint" ar ar-modes="webxr scene-viewer quick-look" ar ar scale="fixed" camera-controls camera-target="0m 0m 0m" shadow-intensity="8.2" environment-image="music_hall_01_1k.hdr" exposure="1.54" auto-rotate camera-orbit="-256.1deg 85.32deg auto">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
 </html>
