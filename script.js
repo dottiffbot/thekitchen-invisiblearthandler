@@ -14,7 +14,7 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
-var playSound = document.querySelector(".sound");
+var playSound = document.getElementById("sound");
 
 function playAudio (){
   playSound.play();
