@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
         // noinspection JSUnresolvedVariable
         let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         let xhr = new XMLHttpRequest();
-        xhr.open('GET', 'audio-autoplay.wav');
+        xhr.open('GET', './assets/Sazanami.mp3');
         xhr.responseType = 'arraybuffer';
         xhr.addEventListener('load', () => {
           let playsound = (audioBuffer) => {
