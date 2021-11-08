@@ -14,31 +14,8 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
-window.addEventListener('load', () => {
-        // noinspection JSUnresolvedVariable
-        let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', './assets/Sazanami.mp3');
-        xhr.responseType = 'arraybuffer';
-        xhr.addEventListener('load', () => {
-          let playsound = (audioBuffer) => {
-            let source = audioCtx.createBufferSource();
-            source.buffer = audioBuffer;
-            source.connect(audioCtx.destination);
-            source.loop = true;
-            source.start();
+var playSound = document.querySelector(".sound");
 
-          }
-
-          //   setTimeout(function () {
-          //     let t = document.createElement('p');
-          //     t.appendChild(document.createTextNode((new Date()).toLocaleString() + ': Sound played'));
-          //     document.querySelector('.output').appendChild(t);
-          //     playsound(audioBuffer);
-          //   }, 1000 + Math.random()*2500);
-          // };
-
-        //   audioCtx.decodeAudioData(xhr.response).then(playsound);
-        // });
-      //   xhr.send();
-      // });
+function playAudio (){
+  playSound.play();
+}
