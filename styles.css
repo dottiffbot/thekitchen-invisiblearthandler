@@ -13,7 +13,9 @@ model-viewer {
   width: 100%;
   height: 90%;
   background-color: black;
+  --poster-color: transparent;
 }
+
 
 
 .progress-bar {
@@ -46,7 +48,7 @@ model-viewer {
 }
 
 #ar-button {
-  background-image: url(art_icon_arrow.png);
+  background-image: url(ar_icon_arrow.png);
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: 12px 50%;
