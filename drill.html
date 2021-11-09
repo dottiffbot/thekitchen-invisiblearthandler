@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer bounds="tight" src="./assets/drill-3.glb" ar ar-modes="webxr quick-look" camera-controls autoplay animation-name="drillAction" poster="drill.webp" shadow-intensity="2.6" autoplay auto-rotate camera-orbit="0deg 75deg auto">
+    <model-viewer bounds="tight" src="./assets/drill-3.glb"  camera-controls autoplay animation-name="drillAction" poster="drill.webp" shadow-intensity="2.6" autoplay auto-rotate camera-orbit="0deg 75deg auto">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
@@ -26,7 +26,7 @@
     <div class="menu-wrapper">
       <h2> info</h2>
       <div class="menu">
-      <span onclick="playAudio()"><img width="50px" src="./assets/note.png"></span>
+      <span onclick="playAudio()"><!-- <img width="50px" src="./assets/note.png"> --> audio</span>
       <a href="./index.html"> pallet jack</a>
       <a href="./tape-measure.html"> tape measure </a>
       <a href="./knife.html"> box cutter </a>
