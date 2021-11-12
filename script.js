@@ -19,6 +19,9 @@ var pallet = document.getElementsById("pallet")
 
 function playAudio (){
   drill.play();
+}
+
+function playAudioPallet(){
   pallet.play();
 }
 

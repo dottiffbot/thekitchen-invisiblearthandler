@@ -1,0 +1,39 @@
+body{
+	background: black;
+}
+
+.menu a{
+
+	text-decoration: none;
+	color: red;
+	font-family: Helvetica Neue, sans-serif;
+
+}
+
+.menu-wrapper{
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 1em;
+
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+}
+
+
+h2{
+	color: red;
+}
+.audioPlayer{
+	position: relative;
+	
+}
+.audioNote{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em 2em;
+}

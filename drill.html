@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="./styles.css" rel="stylesheet"/>
-    <link type="text/css" href="./mystik_styles.css" rel="stylesheet"/>
+    <link type="text/css" href="./styles/styles.css" rel="stylesheet"/>
+    <link type="text/css" href="./styles/mystik_styles.css" rel="stylesheet"/>
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head>
@@ -17,9 +17,8 @@
     src="./assets/drill-3.glb"  
     alt="a green drill floating"
     ar ar-modes="webxr quick-look" 
-    ios-src="./assets/lift.usdc"
     camera-controls autoplay animation-name="drillAction" 
-    poster="hitachi.png" 
+    poster="./poster/hitachi.png" 
     shadow-intensity="2.6" 
     autoplay auto-rotate camera-orbit="0deg 75deg auto">
 
@@ -37,14 +36,14 @@
     </model-viewer>
 
     <div class="menu-wrapper">
-      <h2> info</h2>
+      <h2>AR</h2>
       <div class="menu">
-      <span onclick="playAudio()">< <img width="50px" src="./assets/note.png"></span>
       <a href="./index.html"> pallet jack</a>
       <a href="./tape-measure.html"> tape measure </a>
-      <a href="./knife.html"> box cutter </a>
+      <a href="./utility-knife.html"> utility knife </a>
     </div>
   </div>
+   <div class="audioPlayer"> <span class="audioNote" onclick="playAudio()">< <img width="50px" src="./assets/note.png"></span></div>
 <audio id="drill" loop> <source src="./assets/Sazanami.mp3" type=""></audio>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
