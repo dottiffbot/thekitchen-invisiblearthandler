@@ -27,15 +27,16 @@
       </div>
     </model-viewer> 
 
-    <audio class="sound"> <source src="./assets/Sazanami.mp3" type=""></audio>
+    <audio id="pallet" loop> <source src="./assets/Sazanami.mp3" type=""></audio>
       <div class="menu-wrapper">
         <h2> info </h2>
     <div class="menu">
-      <span onclick="playAudio()"><img width="20px" src="./assets/note.png"></span>
+      <span onclick="playAudio()"><img width="50px" src="./assets/note.png"></span>
       <a href="./drill.html"> drill </a>
     </div>
   </div>
     <script src="script.js"></script>
+
     
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>

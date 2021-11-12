@@ -14,8 +14,11 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
-var playSound = document.getElementById("sound");
+var drill = document.getElementById("drill");
+var pallet = document.getElementsById("pallet")
 
 function playAudio (){
-  playSound.play();
+  drill.play();
+  pallet.play();
 }
+
