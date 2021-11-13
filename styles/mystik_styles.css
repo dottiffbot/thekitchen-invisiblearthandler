@@ -1,6 +1,9 @@
 body{
 	background: black;
+	color: yellow;
 }
+
+
 
 .menu a{
 
@@ -25,6 +28,12 @@ body{
 
 }
 
+button.tools{
+	color: red;
+	margin: 1em 0;
+	cursor: pointer;
+}
+
 .menu{
 	display: flex;
 	flex-direction: column;
@@ -36,14 +45,64 @@ body{
 	visibility: visible;
 }
 
+.info-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1em 2em;
+}
+
+.boop{
+visibility: hidden;
+width: 35vw;
+}
+
+.beep{
+	visibility: visible;
+}
+
+.infoBtn{
+	color: yellow;
+	margin: 1em;
+
+}
+
+.infoBtn:hover{
+	color: red;
+	cursor: pointer;
+
+}
+
+.three{
+	margin: 2em;
+	position: relative;
+	cursor: pointer;
+}
+
+.sixty{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.sixty a{
+	text-decoration: none;
+	color: yellow;
+}
+
+.sixty a:hover{
+	red;
+}
+
 
 .audioPlayer{
 	position: relative;
+	cursor: pointer;
 	
 }
 .audioNote{
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding: 1em 2em;
+	padding: 1em 3em 0;
 }
