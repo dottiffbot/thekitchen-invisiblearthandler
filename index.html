@@ -11,7 +11,38 @@
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head>
   <body>
-    <!-- <model-viewer> HTML element -->
+
+
+    <header>
+           <div class="info-wrapper">
+
+        <span class="infoBtn"> <img src="./assets/inform.png" class="icon"></span>
+
+        <div class="boop">
+          <p>
+         To experience the Art Handler's tools in AR, click the "ARt handle it..." button underneath the  3D model.
+         Note, AR can only be experienced on moblile devices. This will work best on either Chrome or Safari. We recommend hitting the music note icon on the bottom right before entering the AR experience.
+       </p>
+        </div>
+
+      </div>
+
+         <div class="menu-wrapper">
+
+    <img id="toolbox" class="tools box"  src="./assets/toolbox.png"> 
+    <div id="dropdown" class="menu">
+
+      <a href="#" id="current">pallet jack</a>
+      <a href="./drill.html"> drill </a>
+      <a href="./utility-knife.html"> utility knife</a>
+      <a href="./tape-measure.html"> tape measure </a>
+    </div>
+  </div>
+    
+
+</header>
+
+   <!-- <model-viewer> HTML element -->
     <model-viewer src="./assets/pallet-jack.glb" 
     alt="a yellow pallet jack, rusting with peeling paint" 
     poster="./poster/lift.png" 
@@ -24,6 +55,7 @@
     exposure="1.54" 
     auto-rotate camera-orbit="-256.1deg 85.32deg auto" 
     autoplay animation-name="animation0">
+
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
@@ -35,41 +67,7 @@
       </div>
     </model-viewer> 
 
-    <audio id="pallet" loop> <source src="./assets/Sazanami.mp3" type=""></audio>
-      <div class="info-wrapper">
 
-        <span class="infoBtn"> (info)</span>
-
-        <div class="boop">
-          <p>
-         To experience the Art Handler's tools in AR, click the "ARt handle it..." button underneath the  3D model.
-         Note, AR can only be experienced on moblile devices. This will work best on either Chrome or Safari. We recommend hitting the music note icon on the bottom right before entering the AR experience.
-       </p>
-        </div>
-
-      </div>
-
-      <div class="three">
-        <div class="sixty">
-                 <a href=""> 360 videos</a>
-        </div>
-
-      </div>
-
-
-      <div class="menu-wrapper">
-
-    <button id="toolbox" class="tools">TOOL BOX</button> 
-    <div id="dropdown" class="menu">
-  
-      <a href="./drill.html"> drill </a>
-      <a href="./utility-knife.html"> utility knife</a>
-      <a href="./tape-measure.html"> tape measure </a>
-    </div>
-  </div>
-
-      <div class="audioPlayer"><span class="audioNote" onclick="playAudioPallet()"><img width="50px" src="./assets/note.png"></span>
-    </div>
     <script src="script.js"></script>
 
     

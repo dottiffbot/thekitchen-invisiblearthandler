@@ -1,37 +1,74 @@
-body{
-	background: black;
-	color: yellow;
+
+@font-face{
+	font-family: "fakt-normal"
+	src: url(./fonts/FaktPro-Normal.woff);
 }
 
+
+body{
+	background: black;
+	color: red;
+	overflow: hidden;
+}
+
+header, footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
 
 
 .menu a{
 
 	text-decoration: none;
 	color: red;
-	padding: 0.5em;
-	font-family: Helvetica Neue, sans-serif;
+	padding: 0.25em 0.5em;
+	font-family: "fakt-normal", helvetica, sans-serif;
 
 }
 
 .menu a:hover{
-	background-color: yellow;
+	background-color: rgba(188, 190, 192,0.75);
 	font-style: italic;
 }
-
-.menu-wrapper{
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: inline-block;
-	padding: 1em;
+#current{
+	color: red;
+	border: 1px solid red;
+	border-radius: 5px;
 
 }
 
-button.tools{
-	color: red;
-	margin: 1em 0;
+#current:hover{
+	background-color: rgba(188, 190, 192,1);
+}
+.menu-wrapper{
+	margin-right: 1em;
+
+}
+
+.tools{
 	cursor: pointer;
+}
+
+.tools:hover{
+	filter: drop-shadow(1px 1px 1em crimson);
 }
 
 .menu{
@@ -46,10 +83,11 @@ button.tools{
 }
 
 .info-wrapper{
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 1em 2em;
+margin: 2em 2em 0;
+}
+
+.icon{
+	width: 5vw;
 }
 
 .boop{
@@ -62,47 +100,53 @@ width: 35vw;
 }
 
 .infoBtn{
-	color: yellow;
-	margin: 1em;
+
 
 }
 
 .infoBtn:hover{
-	color: red;
 	cursor: pointer;
 
 }
 
-.three{
-	margin: 2em;
-	position: relative;
-	cursor: pointer;
-}
+
 
 .sixty{
-	position: absolute;
-	top: 0;
-	left: 0;
+	cursor: pointer;
+	margin-left: 1em;
 }
 
-.sixty a{
-	text-decoration: none;
-	color: yellow;
+.sixty:hover{
+	scale:1.5;
 }
 
-.sixty a:hover{
-	red;
-}
 
 
 .audioPlayer{
-	position: relative;
+	/*position: relative;*/
 	cursor: pointer;
+	margin-right: 2em;
+	margin-top: 2em;
 	
 }
 .audioNote{
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 1em 3em 0;
+	width: 5vw;
+	
 }
+
+.sphere{
+	width: 8vw;
+}
+
+.box{
+	width: 8vw;
+}
+
+img{
+	display: inline-block;
+	width: 100%;
+}
+
+
+
+

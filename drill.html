@@ -11,11 +11,38 @@
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head>
   <body>
+     <header>
+           <div class="info-wrapper">
+
+        <span class="infoBtn"> <img src="./assets/inform.png" class="icon"></span>
+
+        <div class="boop">
+          <p>
+         To experience the Art Handler's tools in AR, click the "ARt handle it..." button underneath the  3D model.
+         Note, AR can only be experienced on moblile devices. This will work best on either Chrome or Safari. We recommend hitting the music note icon on the bottom right before entering the AR experience.
+       </p>
+        </div>
+
+      </div>
+
+         <div class="menu-wrapper">
+
+    <img id="toolbox" class="tools box"  src="./assets/toolbox.png"> 
+    <div id="dropdown" class="menu">
+
+      <a href="./pallet-jack.html">pallet jack</a>
+      <a href="#" id="current"> drill </a>
+      <a href="./utility-knife.html"> utility knife</a>
+      <a href="./tape-measure.html"> tape measure </a>
+    </div>
+  </div>
+    
+
+</header>
     <!-- <model-viewer> HTML element -->
     <model-viewer
     bounds="tight" 
     src="./assets/drill_spin.gltf"  
-    ios-src="./assets/Drill.usdz"
     alt="a green drill floating"
     ar ar-modes="webxr quick-look" 
     poster="./poster/hitachi.png" 
@@ -34,36 +61,18 @@
       </div>
 
     </model-viewer>
-          <div class="info-wrapper">
-
-        <span class="infoBtn"> (info)</span>
-
-        <div class="boop">
-          <p>
-         To experience the Art Handler's tools in AR, click the "ARt handle it..." button underneath the  3D model.
-         Note, AR can only be experienced on moblile devices. This will work best on either Chrome or Safari. We recommend hitting the music note icon on the bottom right before entering the AR experience.
-       </p>
-        </div>
-
-      </div>
-
-      <div class="three">
+    <footer>
         <div class="sixty">
-                 <a href=""> 360 videos</a>
+                 <a href="./360.html"> <img class="sphere" src="./assets/three.png"></a>
         </div>
 
-      </div>
+<audio id="pallet" loop> <source src="./assets/Sazanami.mp3" type=""></audio>
 
-    <div class="menu-wrapper">
-    <button id="toolbox" class="tools">TOOL BOX</button> 
-      <div class="menu" id="dropdown">
-      <a href="./index.html"> pallet jack</a>
-      <a href="./tape-measure.html"> tape measure </a>
-      <a href="./utility-knife.html"> utility knife </a>
+      <div class="audioPlayer"><span class="audioNote" onclick="playAudioPallet()"><img class="audioNote" src="./assets/note.png"></span>
     </div>
-  </div>
-   <div class="audioPlayer"> <span class="audioNote" onclick="playAudio()"> <img width="50px" src="./assets/note.png"></span></div>
-<audio id="drill" loop> <source src="./assets/Sazanami.mp3" type=""></audio>
+
+</footer>
+     
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
