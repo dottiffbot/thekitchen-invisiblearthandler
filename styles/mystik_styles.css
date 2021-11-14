@@ -1,20 +1,28 @@
 
 @font-face{
-	font-family: "fakt-normal"
-	src: url(./fonts/FaktPro-Normal.woff);
+	font-family: "fakt-normal";
+	src: url(../fonts/FaktPro-Normal.woff);
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 
 body{
 	background: black;
 	color: red;
 	overflow: hidden;
+	font-family: "fakt-normal", sans-serif;
+
 }
 
 header, footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	
 
 }
 
@@ -32,6 +40,7 @@ footer{
 	left: 0;
 	width: 100%;
 	z-index: 1;
+	align-items: center;
 }
 
 
@@ -69,12 +78,14 @@ footer{
 
 .tools:hover{
 	filter: drop-shadow(1px 1px 1em crimson);
+
 }
 
 .menu{
 	display: flex;
 	flex-direction: column;
 	visibility: hidden;
+	transition: visibility 50ms all ease;
 }
 
 
@@ -129,8 +140,8 @@ width: 35vw;
 	margin-top: 2em;
 	
 }
-.audioNote{
-	width: 5vw;
+.note{
+	width: 5.5vw;
 	
 }
 
@@ -146,6 +157,47 @@ img{
 	display: inline-block;
 	width: 100%;
 }
+
+@media only screen and (max-width: 500px){
+
+  body{
+      -webkit-overflow-scrolling: touch;
+  }
+
+  .box{
+  	width: 18vw;
+	margin-left: 2.5em;
+  }
+  .tools{
+  	margin-top: 0.5em;
+
+  }
+
+  .menu{
+ 
+  }
+
+  .icon{
+  	width: 10vw;
+  }
+
+  .note{
+  	width: 10vw;
+
+
+  }
+
+  .audioPlayer{
+  	margin-top: 0;
+
+  }
+
+
+  .sphere{
+  	width: 15vw;
+
+  }
+ }
 
 
 
