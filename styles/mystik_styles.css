@@ -104,14 +104,17 @@ margin: 2em 2em 0;
 .boop{
 visibility: hidden;
 width: 35vw;
+margin-top: 1em;
 background: rgba(0,0,0,0.75);
 border: 1px solid red;
 border-radius: 10px;
 padding: 1em;
+position: fixed;
 }
 
 .close{
 	float: right;
+	display: block;
 }
 
 .close:hover{
@@ -209,7 +212,8 @@ img{
   }
 
 .boop{
-	width: 100vw;
+	width: 70vw;
+
 }
 
   .icon{
