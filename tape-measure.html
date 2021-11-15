@@ -41,18 +41,14 @@
 
 </header>
     <!-- <model-viewer> HTML element -->
-  <model-viewer 
-  bounds="tight" 
-  src="./assets/tape-measure.gltf" 
-  alt="a tape measure that looks hairy"
-  ar ar-scale="webxr scene-viewer quick-look" 
-  poster="./poster/tape-poster.png" 
-  shadow-intensity="2.3" 
-  autoplay environment-image="neutral">
-     
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
+<model-viewer bounds="tight" 
+src="./assets/tape-measure.gltf" 
+ar ar-modes="webxr scene-viewer quick-look" 
+camera-controls environment-image="neutral" 
+poster="./poster/tape-poster.png" s
+hadow-intensity="1" 
+autoplay camera-orbit="-72.92deg 57.97deg auto" 
+auto-rotate>
 
       <button slot="ar-button" id="ar-button">
           ARt handle
