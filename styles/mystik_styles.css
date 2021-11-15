@@ -104,6 +104,18 @@ margin: 2em 2em 0;
 .boop{
 visibility: hidden;
 width: 35vw;
+background: rgba(0,0,0,0.75);
+border: 1px solid red;
+border-radius: 10px;
+padding: 1em;
+}
+
+.close{
+	float: right;
+}
+
+.close:hover{
+	color: grey;
 }
 
 .beep{
@@ -119,7 +131,6 @@ width: 35vw;
 	cursor: pointer;
 
 }
-
 
 
 .sixty{
@@ -156,6 +167,30 @@ width: 35vw;
 img{
 	display: inline-block;
 	width: 100%;
+}
+
+.landing{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: 25% auto;
+	font-size: 2em;
+}
+
+.ARpage a, 
+.three-sixty a{
+	text-decoration: none;
+	color: red;
+	padding: 1.5em;
+
+}
+
+.ARpage:hover, .three-sixty:hover{
+
+	border: 1px solid red; 
+	border-radius: 5px;
+
 }
 
 @media only screen and (max-width: 500px){
