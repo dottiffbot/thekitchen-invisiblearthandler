@@ -46,6 +46,10 @@ model-viewer {
   transition: width 0.3s;
 }
 
+.center-pre-prompt{
+  
+}
+
 #ar-button {
   background-image: url(../ar_icon_red.png);
   background-repeat: no-repeat;
