@@ -87,6 +87,10 @@ footer{
 	display: flex;
 	flex-direction: column;
 	visibility: hidden;
+	 -webkit-transition: visibility 0.5s ease-in-out;
+  -moz-transition: visibility 0.5s ease-in-out;
+  -ms-transition: visibility 0.5s ease-in-out;
+  transition:  visibility  0.5s ease-in-out;
 }
 
 
@@ -95,7 +99,7 @@ footer{
 }
 
 .info-wrapper{
-margin: 2em 2em 0;
+margin: 0.5em 1em 0;
 }
 
 .icon{
@@ -104,10 +108,6 @@ margin: 2em 2em 0;
 
 .boop{
 visibility: hidden;
-	 -webkit-transition: visibility 0.5s ease-in-out;
-  -moz-transition: visibility 0.5s ease-in-out;
-  -ms-transition: visibility 0.5s ease-in-out;
-  transition:  visibility  0.5s ease-in-out;
 width: 35vw;
 margin-top: 1em;
 background: rgba(0,0,0,0.75);
@@ -259,6 +259,10 @@ img{
 	animation: title-sequence 7s ease-in-out;
 }
 
+#home{
+	width: 5em;
+
+}
 
 
 @media only screen and (max-width: 500px){
@@ -302,9 +306,15 @@ img{
 
   }
 
-  .landing{
- /* 	margin: 50% auto;*/
-  }
+ .title{
+ 	font-size: 4.5em;
+ }
+
+.landing{
+	margin-top: 70%;
+}
+
+
  }
 
 
