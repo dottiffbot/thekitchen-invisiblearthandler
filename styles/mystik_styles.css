@@ -56,6 +56,8 @@ footer{
 .menu a:hover{
 	background-color: rgba(188, 190, 192,0.75);
 	font-style: italic;
+	color: black;
+	border-radius: 5px;
 }
 #current{
 	color: red;
@@ -85,7 +87,6 @@ footer{
 	display: flex;
 	flex-direction: column;
 	visibility: hidden;
-	transition: visibility 50ms all ease;
 }
 
 
@@ -103,6 +104,10 @@ margin: 2em 2em 0;
 
 .boop{
 visibility: hidden;
+	 -webkit-transition: visibility 0.5s ease-in-out;
+  -moz-transition: visibility 0.5s ease-in-out;
+  -ms-transition: visibility 0.5s ease-in-out;
+  transition:  visibility  0.5s ease-in-out;
 width: 35vw;
 margin-top: 1em;
 background: rgba(0,0,0,0.75);
@@ -160,7 +165,14 @@ position: fixed;
 }
 
 .sphere{
-	width: 8vw;
+	width: 10vw;
+	transition: 1s ease;
+	filter: drop-shadow(0 0 5px white);
+}
+.sphere:hover{
+	transform: rotate(360deg);
+	scale:1.25;
+
 }
 
 .box{
@@ -172,27 +184,47 @@ img{
 	width: 100%;
 }
 
+
 .landing{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	margin: 25% auto;
 	font-size: 2em;
+	font-family: 'fakt-normal';
+
+}
+
+@keyframes landing{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 100%;
+	}
+}
+
+.ARpage,
+.three-sixty{
+	padding: 1em;
+	z-index: 2;
+	animation: landing 7s ease-in-out;
 }
 
 .ARpage a, 
 .three-sixty a{
 	text-decoration: none;
 	color: red;
-	padding: 1.5em;
 
 }
 
 .ARpage:hover, .three-sixty:hover{
 
 	border: 1px solid red; 
-	border-radius: 5px;
+	border-radius: 10px;
+	scale: 1.25;
 
 }
 
@@ -201,6 +233,33 @@ img{
 	top:0;
 	right: 0;
 }
+
+@keyframes title-sequence{
+	0%{
+		opacity: 100%
+	}
+
+	100%{
+		opacity: 0%
+	}
+}
+
+.title{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	font-size: 8em;
+	color: red;
+	background: black;
+	opacity: 0;
+	text-align: center;
+	top: 0;
+	margin: 25vh auto;
+
+	animation: title-sequence 7s ease-in-out;
+}
+
+
 
 @media only screen and (max-width: 500px){
 
@@ -241,6 +300,10 @@ img{
   .sphere{
   	width: 15vw;
 
+  }
+
+  .landing{
+ /* 	margin: 50% auto;*/
   }
  }
 

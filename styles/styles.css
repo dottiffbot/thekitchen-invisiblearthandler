@@ -54,13 +54,13 @@ model-viewer {
   background-color: transparent;
   position: absolute;
   /*left: 50%;*/
-  transform-origin: bottom left;
+  transform-origin: bottom right;
   /*transform: translateX(-50%);*/
   white-space: nowrap;
-  bottom: 16px;
-  padding: 0px 16px 0px 40px;
-  font-family: Helvetica Neue, sans-serif;
-  font-size: 14px;
+  /*bottom: 16px;*/
+  /*padding: 0px 16px 0px 40px;*/
+  /*font-family: Helvetica Neue, sans-serif;
+  font-size: 14px;*/
   color: red;
   height: 36px;
   line-height: 36px;
@@ -79,7 +79,7 @@ model-viewer {
 }
 
 #ar-button:focus-visible {
-  outline: 1px solid #4285f4;
+ /* outline: 1px solid #4285f4;*/
 }
 
 @keyframes circle {
