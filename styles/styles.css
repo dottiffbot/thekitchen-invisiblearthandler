@@ -49,7 +49,7 @@ model-viewer {
 #ar-button {
   background-image: url(../ar_icon_red.png);
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 40px 40px;
   /*background-position: 12px 50%;*/
   background-color: transparent;
   position: absolute;
@@ -64,25 +64,25 @@ model-viewer {
   /*font-family: Helvetica Neue, sans-serif;
   font-size: 14px;*/
   color: red;
-  height: 36px;
-  line-height: 36px;
+ /* height: 36px;
+  line-height: 36px;*/
   /*border-radius: 18px;
   border: 1px solid red;*/
   filter: drop-shadow(0 0 0.75rem crimson);
   z-index: 2;
 }
 
-#ar-button:active {
+/*#ar-button:active {
   background-color: #E8EAED;
 }
 
 #ar-button:focus {
   outline: none;
-}
+}*/
 
-#ar-button:focus-visible {
- /* outline: 1px solid #4285f4;*/
-}
+/*#ar-button:focus-visible {
+  outline: 1px solid #4285f4;
+}*/
 
 @keyframes circle {
   from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
