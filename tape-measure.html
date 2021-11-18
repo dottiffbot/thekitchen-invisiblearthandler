@@ -31,10 +31,11 @@
     <img id="toolbox" class="tools box"  src="./assets/toolbox.png"> 
     <div id="dropdown" class="menu">
 
-      <a href="./pallet-jack.html">pallet jack</a>
       <a href="./drill.html"> drill </a>
+       <a href="./pallet-jack.html">pallet jack</a>
+         <a href="#" id="current"> tape measure </a>
       <a href="./utility-knife.html"> utility knife</a>
-      <a href="#" id="current"> tape measure </a>
+    
     </div>
   </div>
     
@@ -53,10 +54,7 @@ auto-rotate autoplay animation-name="animation0">
         <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
-      <button slot="ar-button" id="ar-button">
-
-        AR
-  
+      <button slot="ar-button" id="ar-button" onclick="playAudio()">
       </button>
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
@@ -64,14 +62,14 @@ auto-rotate autoplay animation-name="animation0">
     </model-viewer> 
 
     <footer>
-        <div class="sixty">
+   <!--      <div class="sixty">
                  <a href="./360.html"> <img class="sphere" src="./assets/three.png"></a>
         </div>
+ -->
+<audio id="sound" loop> <source src="./assets/audio/tape_measure_audio_1.mp4" type=""></audio>
 
-<audio id="pallet" loop> <source src="./assets/Sazanami.mp3" type=""></audio>
-
-      <div class="audioPlayer"><span class="audioNote" onclick="playAudioPallet()"><img class="note" src="./assets/note.png"></span>
-    </div>
+   <!--    <div class="audioPlayer"><span class="audioNote" onclick="playAudioPallet()"><img class="note" src="./assets/note.png"></span>
+    </div> -->
 
 </footer>
 

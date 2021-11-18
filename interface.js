@@ -1,13 +1,10 @@
-const drill = document.getElementById("drill");
-const pallet = document.getElementById("pallet");
+const sound = document.getElementById("sound");
+
 
 function playAudio (){
-  drill.play();
+  sound.play();
 }
 
-function playAudioPallet(){
-  pallet.play();
-}
 
 const dropdown = document.getElementById("toolbox");
 const menu = document.getElementById("dropdown");

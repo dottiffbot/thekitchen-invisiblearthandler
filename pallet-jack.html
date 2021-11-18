@@ -32,10 +32,10 @@
     <img id="toolbox" class="tools box"  src="./assets/toolbox.png"> 
     <div id="dropdown" class="menu">
 
-      <a href="#" id="current">pallet jack</a>
       <a href="./drill.html"> drill </a>
+        <a href="#" id="current">pallet jack</a>
+         <a href="./tape-measure.html"> tape measure </a>
       <a href="./utility-knife.html"> utility knife</a>
-      <a href="./tape-measure.html"> tape measure </a>
     </div>
   </div>
     
@@ -59,7 +59,7 @@
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
-      <button slot="ar-button" id="ar-button">
+      <button slot="ar-button" id="ar-button" onclick="playAudio()">
 
       </button>
       <div id="ar-prompt">
@@ -69,14 +69,14 @@
 
 
 <footer>
-        <div class="sixty">
+        <!-- <div class="sixty">
                  <a href="./360.html"> <img class="sphere" src="./assets/three.png"></a>
-        </div>
+        </div> -->
 
-<audio id="pallet" loop> <source src="./assets/Sazanami.mp3" type=""></audio>
+<audio id="sound" loop> <source src="./assets/audio/pallet_jack_moving.mp4" type=""></audio>
 
-      <div class="audioPlayer"><span class="audioNote" onclick="playAudioPallet()"><img class="note" src="./assets/note.png"></span>
-    </div>
+      <!-- <div class="audioPlayer"><span class="audioNote" onclick="playAudioPallet()"><img class="note" src="./assets/note.png"></span>
+    </div> -->
 
 </footer>
 
