@@ -64,21 +64,21 @@ model-viewer {
   /*font-family: Helvetica Neue, sans-serif;
   font-size: 14px;*/
   color: red;
- /* height: 36px;
-  line-height: 36px;*/
-  /*border-radius: 18px;
-  border: 1px solid red;*/
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  border: 1px solid red;
   filter: drop-shadow(0 0 0.75rem crimson);
   z-index: 2;
 }
 
-/*#ar-button:active {
+#ar-button:active {
   background-color: #E8EAED;
 }
 
 #ar-button:focus {
   outline: none;
-}*/
+}
 
 /*#ar-button:focus-visible {
   outline: 1px solid #4285f4;
