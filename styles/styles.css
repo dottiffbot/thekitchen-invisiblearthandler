@@ -70,6 +70,7 @@ model-viewer {
   border: 1px solid red;*/
   filter: drop-shadow(0 0 0.75rem crimson);
   z-index: 2;
+  border: none;
 }
 
 #ar-button:active {

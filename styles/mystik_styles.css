@@ -266,6 +266,10 @@ img{
 
 }
 
+.home{
+	background-color: black;
+}
+
 .about{
 	position: fixed;
     top: 0;
