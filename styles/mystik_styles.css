@@ -277,6 +277,16 @@ img{
 	padding: 1em;
 }
 
+.home a{
+	color: red;
+}
+
+.home a:hover{
+	color: grey;
+	font-style: italic;
+
+}
+
 
 @media only screen and (max-width: 500px){
 
