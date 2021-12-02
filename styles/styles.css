@@ -54,7 +54,7 @@ model-viewer {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  right: 2em;
+  right: 30%;
   /*left: 50%;*/
  /* transform-origin: bottom right;*/
   /*transform: translateX(-50%);*/
@@ -77,6 +77,9 @@ model-viewer {
 
 #ar-button:active {
   background-color: #E8EAED;
+  border-radius: 5px;
+  border: 1px solid red;
+  padding: 0.5em;
 }
 
 #ar-button:focus {
