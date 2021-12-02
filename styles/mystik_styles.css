@@ -340,14 +340,14 @@ img{
 }
 
 #creds{
-	width: 100vw;
+	width: 80vw;
 	overflow-y: scroll;
-	padding: 2em;
 
 }
 
 .credit{
 	overflow-y: scroll;
+	padding: 4em;
 }
 
 
