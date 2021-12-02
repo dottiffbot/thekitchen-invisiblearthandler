@@ -54,7 +54,7 @@ model-viewer {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  right: 50vw;
+  right: 45%;
   /*left: 50%;*/
  /* transform-origin: bottom right;*/
   /*transform: translateX(-50%);*/
