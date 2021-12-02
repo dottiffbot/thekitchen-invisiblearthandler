@@ -339,6 +339,11 @@ img{
 	margin-top: 70%;
 }
 
+.about{
+	width: 100vw;
+	overflow-y: scroll;
+}
+
 
  }
 

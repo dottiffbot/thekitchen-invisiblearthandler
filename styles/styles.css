@@ -54,13 +54,13 @@ model-viewer {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  right: 30%;
+  right: 50vw;
   /*left: 50%;*/
  /* transform-origin: bottom right;*/
   /*transform: translateX(-50%);*/
   white-space: nowrap;
   bottom: 16px;
-  /*padding: 0px 16px 0px 40px;*/
+  padding: 0px 16px 0px 40px;
   /*font-family: Helvetica Neue, sans-serif;
   font-size: 14px;*/
   color: red;
@@ -79,7 +79,6 @@ model-viewer {
   background-color: #E8EAED;
   border-radius: 5px;
   border: 1px solid red;
-  padding: 0.5em;
 }
 
 #ar-button:focus {
