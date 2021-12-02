@@ -289,6 +289,8 @@ img{
 }
 
 
+
+
 @media only screen and (max-width: 500px){
 
   body{
@@ -341,14 +343,18 @@ img{
 }
 
 #creds{
-	width: 100vw;
-	overflow-y: scroll;
+	width: 80vw;
+
 
 }
 
 .credit{
-	overflow-y: scroll;
+
 	padding: 2em;
+}
+
+.scroll{
+	overflow-y: scroll;
 }
 
 
