@@ -306,6 +306,7 @@ img{
 
 .boop{
 	width: 70vw;
+	overflow-y: scroll;
 
 }
 
@@ -340,14 +341,14 @@ img{
 }
 
 #creds{
-	width: 80vw;
+	width: 100vw;
 	overflow-y: scroll;
 
 }
 
 .credit{
 	overflow-y: scroll;
-	padding: 4em;
+	padding: 2em;
 }
 
 

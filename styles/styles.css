@@ -54,18 +54,18 @@ model-viewer {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  right: 40%;
+  right: 36.5%;
   /*left: 50%;*/
  /* transform-origin: bottom right;*/
   /*transform: translateX(-50%);*/
   white-space: nowrap;
-  bottom: 16px;
+  /*bottom: 16px;*/
   padding: 2em;
   /*font-family: Helvetica Neue, sans-serif;
   font-size: 14px;*/
   color: red;
-  height: 36px;
-  line-height: 36px;
+/*  height: 36px;*/
+/*  line-height: 36px;*/
 /*  border-radius: 18px;
   border: 1px solid red;*/
   filter: drop-shadow(0 0 0.75rem crimson);
