@@ -268,6 +268,7 @@ img{
 
 .home{
 	background-color: black;
+	z-index: 3;
 }
 
 .about{
