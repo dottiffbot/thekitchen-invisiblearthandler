@@ -342,7 +342,12 @@ img{
 .home{
 	width: 100vw;
 	overflow-y: scroll;
+	padding: 2em;
 
+}
+
+creds{
+	overflow-y: scroll;
 }
 
 
