@@ -339,14 +339,14 @@ img{
 	margin-top: 70%;
 }
 
-.home{
+#creds{
 	width: 100vw;
 	overflow-y: scroll;
 	padding: 2em;
 
 }
 
-creds{
+.credit{
 	overflow-y: scroll;
 }
 
