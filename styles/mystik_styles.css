@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 body{
 	background: black;
 	color: red;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	font-family: "fakt-normal", sans-serif;
 
 }
@@ -109,6 +109,7 @@ margin: 1.5em 1em 0;
 .boop{
 visibility: hidden;
 width: 35vw;
+height: auto;
 margin-top: 1em;
 background: rgba(0,0,0,0.75);
 border: 1px solid red;
@@ -132,10 +133,6 @@ right: 0;
 	visibility: visible;
 }
 
-.infoBtn{
-
-
-}
 
 .infoBtn:hover{
 	cursor: pointer;
@@ -268,7 +265,6 @@ img{
 
 .home{
 	background-color: black;
-	height: auto;
 
 }
 
@@ -293,6 +289,7 @@ img{
 
 
 
+
 @media only screen and (max-width: 500px){
 
   body{
@@ -309,9 +306,14 @@ img{
   }
 
 .boop{
-	width: 70vw;
+	width: 100vw;
+	margin-right: 1.15em;
 	overflow-y: scroll;
 
+}
+
+.credit{
+	overflow-y: scroll;
 }
 
   .icon{
@@ -346,13 +348,12 @@ img{
 
 #creds{
 	width: 80vw;
-
+	overflow-y: scroll;
 
 }
 
 .credit{
-
-	padding: 2em;
+	padding: 1em;
 }
 
 .scroll{
