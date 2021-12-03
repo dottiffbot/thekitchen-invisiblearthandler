@@ -6,7 +6,7 @@ const scroll = document.querySelector("scroll")
 
 function infoDrop(){
   instructions.classList.toggle("beep");
-  body.classList.toggle("scroll")
+  // body.classList.toggle("scroll")
   console.log('beep');
 }
 
