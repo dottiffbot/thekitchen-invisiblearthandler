@@ -115,7 +115,8 @@ background: rgba(0,0,0,0.75);
 border: 1px solid red;
 border-radius: 10px;
 padding: 1em;
-position: fixed;
+position: absolute;
+
 top: 0;
 right: 0;
 }
@@ -269,7 +270,7 @@ img{
 }
 
 .about{
-	position: fixed;
+	position: absolute;
     top: 0;
 	right: 0;
 	padding: 1em;
