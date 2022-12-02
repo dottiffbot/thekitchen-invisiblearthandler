@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 body{
 	background: black;
 	color: red;
-	/*overflow: hidden;*/
+	overflow-x: hidden;
 	font-family: "fakt-normal", sans-serif;
 
 }
@@ -109,16 +109,17 @@ margin: 1.5em 1em 0;
 .boop{
 visibility: hidden;
 width: 35vw;
-height: auto;
+/* height: auto; */
 margin-top: 1em;
 background: rgba(0,0,0,0.75);
 border: 1px solid red;
 border-radius: 10px;
 padding: 1em;
-position: absolute;
-
+position: fixed;
+overflow-y: scroll;
+/* margin: 0 auto; */
 top: 0;
-right: 0;
+left:35vw;
 }
 
 .close{
@@ -132,6 +133,10 @@ right: 0;
 
 .beep{
 	visibility: visible;
+}
+.noscroll{
+	overflow: hidden;
+
 }
 
 
@@ -275,6 +280,8 @@ img{
 	right: 0;
 	padding: 1em;
 	z-index: 5;
+
+
 }
 
 .home a{
@@ -291,7 +298,7 @@ img{
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 700px){
 
   body{
       -webkit-overflow-scrolling: touch;
@@ -309,10 +316,13 @@ img{
 .boop{
 	width: 100vw;
 	margin-right: 1.15em;
+	left: 0;
 	overflow-y: scroll;
 
-}
-
+/* }
+#creds{
+	width: 90vw;
+} */
 .credit{
 	overflow-y: scroll;
 }
