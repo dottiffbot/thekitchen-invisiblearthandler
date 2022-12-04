@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 body{
 	background: black;
 	color: red;
-	overflow-x: hidden;
+	overflow: hidden;
 	font-family: "fakt-normal", sans-serif;
 
 }
@@ -108,7 +108,7 @@ margin: 1.5em 1em 0;
 
 .boop{
 visibility: hidden;
-width: 35vw;
+width: 50vw;
 /* height: auto; */
 margin-top: 1em;
 background: rgba(0,0,0,0.75);
@@ -116,15 +116,20 @@ border: 1px solid red;
 border-radius: 10px;
 padding: 1em;
 position: fixed;
-overflow-y: scroll;
+overflow: scroll;
 /* margin: 0 auto; */
-top: 0;
-left:35vw;
+top: 10vh;
+left:27vw;
+}
+
+.ex{
+	position: relative;
+	float: right;
 }
 
 .close{
-	float: right;
-	display: block;
+	position: fixed;
+
 }
 
 .close:hover{
@@ -135,7 +140,7 @@ left:35vw;
 	visibility: visible;
 }
 .noscroll{
-	overflow: hidden;
+	overflow-y: hidden;
 
 }
 
@@ -315,9 +320,12 @@ img{
 
 .boop{
 	width: 100vw;
-	margin-right: 1.15em;
-	left: 0;
+	height: 50vh;
+	font-size: 1em;
+	/* margin-right: 1.5em; */
+	left: 2em;
 	overflow-y: scroll;
+}
 
 /* }
 #creds{
